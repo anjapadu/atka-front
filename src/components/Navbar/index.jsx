@@ -5,36 +5,54 @@ import Logo2 from '../../img/logo2.png';
 class Navbar extends Component{
     render(){
         return(
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="">
+            <nav className="navbar" role="navigation" aria-label="main navigation">
+                <div className="navbar-brand">
+                    <a className="navbar-item" href={BASE_URL}>
                         <img src={Logo2} width="40" height="28" />
                     </a>
-                    <a class="navbar-item" href="">
+                    <a className="navbar-item" href={BASE_URL}>
                         <img src={Logo} width="112" height="28" />
                     </a>
 
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     </a>
                 </div>
 
-                <div id="navbarBasicExample" class="navbar-menu">
-                    
-
-                    <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                        <a class="button is-primary">
-                            <strong>Log in</strong>
+                <div id="navbarBasicExample" className="navbar-menu">
+                    <div className="navbar-start">
+                        <a 
+                            className="navbar-item"
+                            href={`${BASE_URL}/adoptar`}
+                        >
+                            Adoptar
                         </a>
-                        <a class="button is-light">
-                            Sin up
+                        <a 
+                            className="navbar-item"
+                            href={`${BASE_URL}/servicios`}
+                        >
+                            Servicios
                         </a>
-                        </div>
                     </div>
+                    <div className="navbar-end">
+                        <div className="navbar-item">
+                            <div className="buttons">
+                            <a
+                                className="button is-primary"
+                                href={`${BASE_URL}/login`}
+                            >
+                                <strong>Log in</strong>
+                            </a>
+                            <a 
+                                className="button is-light"
+                                href={`${BASE_URL}/registro`}
+                            >
+                                Sin up
+                            </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>

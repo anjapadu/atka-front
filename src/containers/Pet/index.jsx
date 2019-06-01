@@ -20,7 +20,7 @@ class Pet extends Component{
     renderDonation(){
         return this.state.donations.map((item, idx) => {
             return (
-                <p class="list-item">
+                <p className="list-item">
                     {`${item.firstName} ${item.lastName} dono: S/. ${item.amount}`}
                 </p>
             )
@@ -37,7 +37,7 @@ class Pet extends Component{
                                     <img src="https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5c3871215bafe83b078adbe3/perro.jpg" alt=""/>
                                 </div>
                                 <div className="column">
-                                    <h1 class="title">Tobi</h1>
+                                    <h1 className="title">Tobi</h1>
                                     <p>Raza : Chusco</p>
                                     <p>Tamaño : Pequeño</p>
                                     <p>Colores : Caramelo con blanco</p>
@@ -45,13 +45,13 @@ class Pet extends Component{
                                     <p>Salud: Caracha</p>
                                     <p>Descripcion :  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                                     <br/><br/>
-                                    <a class="button is-large is-fullwidth is-link">Adoptar</a>
+                                    <a className="button is-large is-fullwidth is-link">Adoptar</a>
                                 </div>
                             </div>
                             <div className="columns">
                                 <div className="column">
                                     <h1 className="title">Donadores</h1>
-                                    <div class="list is-hoverable">
+                                    <div className="list is-hoverable">
                                         { this.renderDonation() }
                                     </div>
                                 </div>

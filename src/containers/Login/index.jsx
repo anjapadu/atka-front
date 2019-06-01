@@ -21,12 +21,12 @@ class Login extends PureComponent {
     render() {
         return (<Fragment>
             <Navbar />
-            <div class="columns is-mobile">
-                <div class="column is-half is-offset-one-quarter">
+            <div className="columns is-mobile">
+                <div className="column is-half is-offset-one-quarter">
                         <div className="section">
                             <div className="container">
-                                <div class="card has-text-center" style={{ padding:"20px" }}>
-                                <h1 class="title">Login</h1>
+                                <div className="card has-text-center" style={{ padding:"20px" }}>
+                                <h1 className="title">Login</h1>
                                 <div className="container">
                                     <div className="field">
                                         <label className="label">Email</label>
@@ -54,7 +54,7 @@ class Login extends PureComponent {
                                             />
                                         </div>
                                     </div>
-                                    <div class="control">
+                                    <div className="control">
                                         <button 
                                             disabled={!this.props.userLoading}
                                             onClick={this.onClickSubmit.bind(this)}

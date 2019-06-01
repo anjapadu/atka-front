@@ -46,7 +46,7 @@ class RouterApp extends React.Component {
                     exact
                 />
                 <Route
-                    path={"/mascota"}
+                    path={"/mascotas"}
                     component={() => <Pet />}
                     exact
                 />

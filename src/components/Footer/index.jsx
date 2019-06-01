@@ -5,7 +5,7 @@ class Navbar extends Component{
         return(
             <footer className="footer">
                 <div className="content has-text-centered">
-                    <p>Copyright 2019 Atka | Texto de prueba</p>
+                    <p>Copyright 2019 Atka | Ayudando mascotas</p>
                 </div>
             </footer>
         )
