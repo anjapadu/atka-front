@@ -21,3 +21,18 @@ export const Profile = Loadable(
         loader: () => import(/* webpackChunkName: "login" */'../containers/Profile')
     })
 )
+export const Services = Loadable(
+    withLoader({
+        loader: () => import(/* webpackChunkName: "login" */'../containers/Services')
+    })
+)
+export const Pet = Loadable(
+    withLoader({
+        loader: () => import(/* webpackChunkName: "login" */'../containers/Pet')
+    })
+)
+export const Adopt = Loadable(
+    withLoader({
+        loader: () => import(/* webpackChunkName: "login" */'../containers/Adopt')
+    })
+)

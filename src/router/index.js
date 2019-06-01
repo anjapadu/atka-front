@@ -12,7 +12,10 @@ import { push } from 'connected-react-router';
 import {
     Home,
     Login,
-    Profile
+    Profile,
+    Services,
+    Pet,
+    Adopt
 } from './asyncRoutes';
 import { appSelector } from '../selectors';
 
@@ -35,6 +38,21 @@ class RouterApp extends React.Component {
                 <Route
                     path={"/profile"}
                     component={() => <Profile />}
+                    exact
+                />
+                <Route
+                    path={"/servicios"}
+                    component={() => <Services />}
+                    exact
+                />
+                <Route
+                    path={"/mascota"}
+                    component={() => <Pet />}
+                    exact
+                />
+                <Route
+                    path={"/adoptar"}
+                    component={() => <Adopt />}
                     exact
                 />
             </Switch>

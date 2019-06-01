@@ -1,12 +1,17 @@
 import React, { Component, Fragment } from 'react';
+import Logo from '../../img/logo.png';
+import Logo2 from '../../img/logo2.png';
 
 class Navbar extends Component{
     render(){
         return(
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+                    <a class="navbar-item" href="">
+                        <img src={Logo2} width="40" height="28" />
+                    </a>
+                    <a class="navbar-item" href="">
+                        <img src={Logo} width="112" height="28" />
                     </a>
 
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -17,46 +22,16 @@ class Navbar extends Component{
                 </div>
 
                 <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-start">
-                    <a class="navbar-item">
-                        Home
-                    </a>
-
-                    <a class="navbar-item">
-                        Documentation
-                    </a>
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                        More
-                        </a>
-
-                        <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider" />
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                        </div>
-                    </div>
-                    </div>
+                    
 
                     <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
                         <a class="button is-primary">
-                            <strong>Sign up</strong>
+                            <strong>Log in</strong>
                         </a>
                         <a class="button is-light">
-                            Log in
+                            Sin up
                         </a>
                         </div>
                     </div>
